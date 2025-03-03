@@ -1,0 +1,27 @@
+.foodculture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foodculturebox{
+    padding: 20px;
+    border-radius: 10px;
+    border: 0.1px solid #ddd;
+    width: 90%;
+}
+
+
+.foodculturebox p{
+    font-size: 18px;
+    word-spacing: 15px;
+    color: grey;
+}
+
+
+@media (max-width:460px) {
+    .foodculture{
+        display: none;
+    }
+}
+

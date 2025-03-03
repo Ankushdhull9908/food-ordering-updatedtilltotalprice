@@ -1,0 +1,53 @@
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+    width: 88%;
+}
+
+.home h3{
+    font-size: 20px;
+
+}
+.headings{
+    margin: 10px 0px 10px 0px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 30%;
+
+    width: 100%;
+}
+
+
+.headings h2{
+        position: absolute;
+        left: 50px;
+}
+
+.notshow{
+    display: none;
+}
+
+@media (max-width:460px) {
+    .home{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width:480px
+    }
+
+    .headings h2{
+        font-size: 20px;
+        left: 50px;
+    }
+}
+
+
+
+
+

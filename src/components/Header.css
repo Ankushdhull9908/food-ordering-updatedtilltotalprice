@@ -1,0 +1,159 @@
+.header{
+    position: relative;
+    height: 50%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#headerimg{
+    height: 100%;
+    width: 100%;
+    rotate: 180deg;
+    border-radius: 15px;
+}
+
+.mapheader{
+    height: 35%;
+    width: 80%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapheader p{
+    z-index: 2;
+
+}
+
+.mapheader .fetchandimage{
+    width: 170px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: space-around;
+    z-index: 2;
+    top: -80px;
+    height: 50px;
+}
+
+.mapheader .fetchandimage p{
+    position: relative;
+    top: 5px;
+}
+
+#googlemap{
+    height: 100%;
+    width: 100%;
+    filter: blur(2px);
+}
+
+.mapheader #loading{
+    height: 55px;
+    width: auto;
+    animation: loading 1s infinite ease-in-out
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.mapheader button{
+   bottom: 100px;
+    height: 45px;
+    width: 200px;
+    position: absolute;
+    border: none;
+    background-color: lightgreen;
+    color: white;
+}
+
+.mapheader button:hover{
+    background-color: green;
+}
+
+.headerimagelogo{
+    top: 40px;
+    left: 40px;
+    position: absolute;
+}
+
+.headerimagelogo img{
+    height: 20px;
+    width: auto;
+}
+
+
+.headerimagecontent{
+    position: absolute;
+    bottom: 80px;
+    color: whitesmoke;
+    width: 50%;
+    left: 40px;
+}
+
+.headerimagecontent h1{
+    font-size: 52px;
+    word-spacing: 10px;
+}
+
+@media (max-width:460px) {
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 26vh;
+        width: 100vw;
+    }
+
+    #headerimg{
+        height: 87%;
+        width: 87%;
+    }
+
+    .headerimagelogo{
+        top: 20px;
+        left: 50px;
+        position: absolute;
+    }
+
+    .headerimagelogo img{
+        height: 14px;
+    }
+
+    .headerimagecontent h1{
+        font-size: 20px;
+        word-spacing: 10px;
+    }
+
+    .headerimagecontent{
+        bottom: 30px;
+        left: 50px;
+    }
+
+    .mapheader button{
+        bottom: 40px;
+         height: 35px;
+         width: 150px;
+     }
+
+
+     .mapheader #loading{
+        height: 30px;
+     }
+
+     .mapheader .fetchandimage{
+        top: -70px;
+     }
+
+    
+}

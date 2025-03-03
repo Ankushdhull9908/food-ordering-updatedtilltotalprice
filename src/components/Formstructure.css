@@ -1,0 +1,53 @@
+.formbox{
+    display: flex;
+    justify-content: flex-end;
+    align-items: left;
+    flex-direction: column;
+    height: 400px;
+    width: 500px;
+    
+}
+
+.formbox form{
+    height: 350px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formbox .loginheading{
+    display: flex;
+    justify-content: space-around;
+    height: 25%;
+    width: 100%;
+    align-items: center;
+}
+
+.formbox .loginimage{
+    height: 50%;
+    width: 20%;
+}
+
+.formbox img{
+    height: 32px;
+    width: auto;
+    border-radius: 50%;
+}
+
+form input{
+    outline: none;
+    height: 55px;
+    width: 70%;
+    border: 0.1px solid #ddd;
+}
+
+form button{
+    margin: 20px 0px 20px 0px;
+    height: 45px;
+    width: 70%;
+    background-color: #1ba672;
+    border: none;
+    color: white;
+}

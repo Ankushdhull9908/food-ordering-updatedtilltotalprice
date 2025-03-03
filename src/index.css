@@ -1,0 +1,40 @@
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./assets/Gilroy/Gilroy-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure the HTML and body take full screen */
+html, body {
+  width: 84vw;
+  margin: auto;
+  font-family: 'Gilroy', sans-serif;
+}
+
+#root {
+  
+  margin: auto;
+}
+
+
+@media (max-width:460px) {
+  html, body {
+    margin-left: 14px;
+    width: 96vw;
+    
+  }
+  
+  #root {
+    width: 96vw;
+  }
+
+  
+}

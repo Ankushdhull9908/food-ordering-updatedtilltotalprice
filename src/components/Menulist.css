@@ -1,0 +1,35 @@
+.menulist{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    gap: 20px;
+}
+
+.menulist .item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    height: 95%;
+    width: 20%;
+}
+
+.menulist .item img{
+    height: 75px;
+    width: auto;
+}
+
+
+
+@media (max-width:460px) {
+    .menulist{
+        width: 77vw;
+    }
+
+    .menulist .item img{
+        height: 60px;
+    }
+}

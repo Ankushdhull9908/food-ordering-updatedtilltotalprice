@@ -1,0 +1,285 @@
+.cart{
+    height: auto;
+    width: 90%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+
+.cartbox{
+    padding: 20px;
+    height: auto;
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.left .loginimage{
+    height: 50%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 50px;
+    top: 40px;
+}
+
+.left .loginimage img{
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+}
+
+
+.cartbox .left{
+    gap: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: 60%;
+}
+
+.address .deliverybox{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    gap: 20px;
+    padding: 10px;
+}
+
+ .address .changeaddress{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
+
+.changeaddress p{
+    color: orange;
+}
+
+.deliverybox .deliveryaddressheading{
+    width: 100%;
+}
+
+
+
+.address .deliverybox .deliveryaddressboxes{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.deliveryaddressboxes button{
+    height: 35px;
+    width: 170px;
+    background-color: lightgreen;
+    color: white;
+    border: none;
+    
+}
+
+.address .defaultaddress{
+    padding: 10px;
+    height: 160px;
+    width: 200px;
+    border: 0.1px solid #ddd;
+    color: grey;
+    border-style: dotted;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.address .addnewaddress{
+    padding: 10px;
+    height: 160px;
+    width: 200px;
+    border: 0.1px solid #ddd;
+    border-style: dotted;
+}
+
+.cartbox .cartbox{
+    width: 30%;
+    height: auto;
+    margin-right: 20px;
+    margin-top: 30px;
+    min-height: 600px;
+    background-color: rgb(249, 250, 251);
+}
+ 
+
+.left .accountheading{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+}
+
+.buttoncollection{
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.cartbox .left .loginsignup{
+    position: relative;
+    padding: 20px;
+    height: auto;
+    min-height: 120px;
+    background-color: aliceblue;
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    
+}
+
+.left .cartlefticon{
+    position: absolute;
+    left: -20px;
+    border: 0.1px solid #ddd;
+    top: 25px;
+}
+
+.left .cartlefticon img{
+    height: 25px;
+}
+
+.left .notloggedin{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100%;
+      width: 100%; 
+}
+
+.left .loginsuccessfull{
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: column;
+
+}
+
+.loginsuccessfull img{
+    height: 30px;
+}
+
+.left .loginsignupbutton{
+    height:auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-direction: column;
+    align-items: left;
+}
+
+
+
+.left .notloggedin form{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.left .loginsignupbutton button{
+    height: 45px;
+    width: 48%;
+    background-color: #1ba672;
+    border: none;
+    color: white;
+}
+
+
+
+
+.cartbox .left .address{
+    position: relative;
+    min-height: 120px;
+    background-color: aliceblue;
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+    padding: 20px;
+}
+
+.left .addresssuccessfull{
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: column;
+}
+
+.left .addresssuccessfull img{
+    height: 30px;
+    width: 30px;
+}
+
+
+.cartbox .left .payment{
+    position: relative;
+    min-height: 120px;
+    background-color: aliceblue;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: grey;
+}
+
+.payment button{
+    height: 45px;
+    width: 180px;
+    background-color: lightgreen;
+    color: white;
+    outline: none;
+    border: none;
+    
+}
+
+button{
+    cursor: pointer;
+}
+
+.payment button:hover{
+    background-color: green;
+}
+
+.cartbox .cartsection{
+    padding: 12px;
+    background-color: aliceblue;
+    width: 30%;
+    height: 800px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.cartsection .cartitem{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+
+}
+
+.cartitem img{
+    height: 20px;
+}
+
