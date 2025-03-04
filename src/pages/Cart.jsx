@@ -5,13 +5,28 @@ import FormStrcuture from '../components/FormStrcuture'
 import '../components/Formstructure.css'
 import { assets } from '../assets/assets'
 import {restaurants} from '../assets/Restaurants'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 
 function Cart() {
 
   const navigate = useNavigate()
-  const {cart,increasequantity,decreasequantity} = useCart()
+  const {cart,increasequantity,decreasequantity,totalprice} = useCart()
   console.log(cart)
+  var count = 0
+
+  const resid = cart.map((i)=>{
+    if(i.restaurantId){
+      return i.restaurantId
+      return
+    }
+  })
+  //const resid = cart.filter((i)=> i.id=== restaurants.id)
+  const x= resid[0]
+
+  const filteredRes = restaurants.filter((i)=> i.id === x)
+  const deliverycharge = filteredRes? Math.ceil(filteredRes[0].Distance*2) : ''
+
+
 
   const { logindata, address } = useCart()
   const [toggle, settoggle] = useState(false)
@@ -124,13 +139,25 @@ function Cart() {
 
       </div>
       <div className="cartsection">
+        <div className="restaurantsection">
+              {
+                filteredRes.map((i)=>{
+                  return(
+                    <div>
+                    <img src={i.image} alt='error'/>
+                    <p>{i.name}</p>
+                  </div>
+                  )
+                  
+                })
+              }
+        </div>
         
           {
             cart.map((i)=>{
               return(
 
                 <div className='cartitem'>
-                  <img src={i.image} alt='error'/>
                   <p>{i.name}</p>
                   <p>{i.price}</p>
                   <p>Quantity {i.quantity}</p>
@@ -141,6 +168,11 @@ function Cart() {
               )
             })
           }
+          <div className="totalprice">
+            <p>Distance: {filteredRes? Math.ceil(filteredRes[0].Distance) : ''} km</p>
+            <p>Delivery Charges: {deliverycharge}</p>
+            <p>To Pay : {totalprice+deliverycharge}</p>
+          </div>
         </div>
     </div>
         )

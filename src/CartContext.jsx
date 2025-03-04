@@ -9,8 +9,7 @@ const CartContext = createContext();
 export const CartProvider = (props) => {
    const [cart, setCart] = useState([]);
    var [quantity,setquantity] = useState(0)
-    const allproducttotal = 0
-    const totalprice = 0;
+    const [totalprice,settotalprice] = useState(0)
     const [logindata,setLogindata] = useState({name:null,phone:null})
     const [address,setaddress] = useState({address:null,city:null,pincode:null,country:null})
    const distance = ''
@@ -91,6 +90,17 @@ export const CartProvider = (props) => {
             cart[cartindex].quantity+=1
         }
     };
+
+    useEffect(()=>{
+           setquantity(0)
+           settotalprice(0)
+           cart.forEach((i)=>{
+            setquantity((prev)=> prev+= i.quantity)
+            settotalprice((prev)=> prev+= i.price*i.quantity)
+           })
+    },[cart])
+
+    console.log(totalprice)
 
     
 
@@ -197,7 +207,7 @@ export const CartProvider = (props) => {
         const FullLength = Math.ceil((final.length)/2)
       //  console.log(FullLength)*/
     return (
-        <CartContext.Provider value={{getuserlatlong,address,final,FullLength,login,logindata,userlat,AddAddress,addToCart,cart,increasequantity,decreasequantity/*haversine,distance,, removeFromCart,,logindata,,totalprice,allproducttotal,AddAddress*/}}>
+        <CartContext.Provider value={{getuserlatlong,address,final,FullLength,login,logindata,userlat,AddAddress,addToCart,cart,increasequantity,decreasequantity,quantity,totalprice/*haversine,distance,, removeFromCart,,logindata,,totalprice,allproducttotal,AddAddress*/}}>
             {props.children}
         </CartContext.Provider>
     );

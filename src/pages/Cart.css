@@ -1,6 +1,6 @@
 .cart{
     height: auto;
-    width: 90%;
+    width: 78%;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -60,7 +60,7 @@
  .address .changeaddress{
     position: absolute;
     right: 20px;
-    top: 30px;
+    top: 20px;
 }
 
 .changeaddress p{
@@ -271,11 +271,12 @@ button{
 
 
 .cartsection .cartitem{
-    
+    padding: 15px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: left;
     height: 50px;
+    gap: 10px;
 
 }
 
@@ -283,3 +284,26 @@ button{
     height: 20px;
 }
 
+
+.cartsection .restaurantsection{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.cartsection .restaurantsection img{
+    height: 30px;
+}
+
+
+.cartsection .totalprice{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px 0px 20px 0px;
+}

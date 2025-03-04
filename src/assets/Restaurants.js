@@ -42,7 +42,7 @@ export const restaurants = [
         latitude: 28.5249,
         longitude: 77.2063
       },
-      image: 'https://lifebeyondnumbers.b-cdn.net/wp-content/uploads/2023/12/haldiramji.jpg',
+      image: 'https://images.jdmagicbox.com/v2/comp/mumbai/n3/022pxx22.xx22.230301122107.w1n3/catalogue/haldiram-s-restaurant-andheri-west-mumbai-restaurants-0l3wnau0h2.jpg',
       menu: [301, 302]
     },
     {

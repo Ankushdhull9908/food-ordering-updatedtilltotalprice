@@ -6,7 +6,7 @@ import { useCart } from '../CartContext'
 
 
 function Navbar() {
-  const {logindata} = useCart()
+  const {logindata,quantity} = useCart()
   console.log(logindata)
   useEffect(()=>{
         
@@ -32,6 +32,7 @@ function Navbar() {
            </div>
  
            <div className="cart1">
+            <p id='quantitynumber' onClick={()=> navigate('/cart')}>{quantity===0 ? '': quantity}</p>
             <img src={assets.bag_icon} alt='bag' onClick={()=>{
               navigate('/cart')
             }}/>
