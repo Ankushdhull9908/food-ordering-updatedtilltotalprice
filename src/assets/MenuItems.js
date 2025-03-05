@@ -160,7 +160,7 @@ export const Menu = [
         quantity:0,
         restaurantId: 9,
         image: "https://pizzahut.com/cheesegarlicbread.jpg"
-        },id: 1801,
+        },{id: 1801,
         name: "Pepperoni Pizza",
         price: 350,
         category: "Pizza",
