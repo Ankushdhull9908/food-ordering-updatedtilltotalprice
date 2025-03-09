@@ -1,7 +1,8 @@
 
 .signup{
     height: 80vh;
-    width: 100%;
+    background-color: red;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;

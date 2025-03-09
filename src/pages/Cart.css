@@ -396,4 +396,20 @@ button{
         height: 60%;
         width: 90%;
     }
+
+    .cartbox{
+        width: 100vw;
+        height: 80%;
+    }
+
+    .cartbox .left{
+        display: none;
+    }
+
+    .cartbox .cartsection{
+        width: 100%;
+        
+    }
+
+   
 }

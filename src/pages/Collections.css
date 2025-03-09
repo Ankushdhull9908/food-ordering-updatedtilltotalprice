@@ -1,4 +1,14 @@
 .collections{
     height: 100%;
     width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.collections img{
+    height: 60vh;
+    width: auto;
+}
+
+
