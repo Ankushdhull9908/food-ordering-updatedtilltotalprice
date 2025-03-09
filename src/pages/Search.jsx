@@ -2,18 +2,15 @@ import React, { useEffect, useState } from 'react'
 import {restaurants} from '../assets/Restaurants'
 import { assets } from '../assets/assets'
 import './Search.css'
+import { useNavigate } from 'react-router-dom'
 
 function Search() {
+    const navigate = useNavigate()
     const [searchtext,setsearchtext] = useState('')
     const [searchedResult,setSearchresult] = useState([])
-    
-    
-        
-        
-    
         function search()
         {
-            const searchedResult = restaurants.filter((i)=> i.name === searchtext)
+            const searchedResult = restaurants.filter((i)=> i.name.toLowerCase().split(" ").join("")  === searchtext.toLowerCase().split(" ").join("") || i.name.split(" ").join("") === searchtext.split(" ").join("") )
             console.log(searchedResult)
             setSearchresult(searchedResult)
         }
@@ -21,18 +18,21 @@ function Search() {
 
     useEffect(()=>{
 
-    },[searchedResult])
+    },[searchedResult,searchtext])
   return (
     <div className='search1'>
 
         <div className="searchinputarea">
+            
             <input type='text' value={searchtext} placeholder='Search For Foods or Restaurants' onChange={(e)=>{
                 setsearchtext(e.target.value)
                 
             }}/>
-            <button onClick={()=>{
-                search()
-            }}>Search</button>
+            <img src={assets.cross_icon} alt="cross" id="crossicon" style={{ display: searchtext === '' ? 'none' : 'block' }} onClick={()=> {
+                setsearchtext('') 
+                setSearchresult([])
+                }} />
+            <img src={assets.search_icon} alt='search' id='searchicon' onClick={()=> search()}/>
         </div>
         <div className="searchresults">
         {
@@ -43,7 +43,7 @@ function Search() {
                             return(
                                 <div className='sfooditem' key={index}>
                                     <div className="sfoodimg">
-                                    <img src={item.image} alt='error'/>
+                                    <img src={item.image} alt='error' onClick={()=> navigate(`/description/${item.id}`)}/>
                                     </div>
                                     <div className="sresname">
                                     <h3>{item.name}</h3>
@@ -51,9 +51,9 @@ function Search() {
                                     
             
                                     <div className="sratingdeliverytime">
-                                        <img src={assets.rating_starts} alt='error'/>
+                                       
                                     <p>{item.rating}</p>
-                                    <p> - {item.deliveryTime}min</p>
+                                    
                                     </div>
                                     <div className="sresaddress">
                                     <p>{item.location.address}</p>

@@ -5,6 +5,7 @@
     align-items: center;
     width: 100%;
     gap: 20px;
+    overflow-x: auto;
 }
 
 .menulist .item{
@@ -15,12 +16,17 @@
     align-items: center;
     height: 95%;
     width: 20%;
+    cursor: pointer;
 }
 
 .menulist .item img{
-    height: 75px;
+    height: 140px;
     width: auto;
 }
+
+.menulist::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+  }
 
 
 

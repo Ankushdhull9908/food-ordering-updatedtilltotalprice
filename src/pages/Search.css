@@ -8,14 +8,27 @@
   }
 
   .search1 .searchinputarea{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
         height: 100px;
-        width: 100%;
+        width: 90%;
+  }
+
+  .searchinputarea #searchicon{
+    position: absolute;
+    right: 30px;
+  }
+
+  #crossicon{
+    position: absolute;
+    right: 80px;
+    display: none;
   }
 
   .search1 .searchinputarea input{
+    padding: 20px;
     height: 45px;
     width: 90%;
     border: 0.1px solid #ddd;
@@ -29,6 +42,66 @@
     align-items: center;
     flex-wrap: wrap;
     height: auto;
-    width: 93%;
+    width: 85%;
   }
   
+
+  .sfooditem{
+    transition: 0.2s ease-in-out;
+    min-height: 150px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: 200px;
+    width: 240px;
+    margin: 10px 10px 50px 20px;
+}
+
+.searchresults .sfooditem:hover{
+    scale: 1.1;
+}
+
+.sfooditem .sfoodimg{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 50%;
+    width: 160px;
+}
+.sfooditem .sfoodimg img{
+    border-radius: 15px;
+    height: 150px;
+    width: auto;
+}
+
+
+.sratingdeliverytime{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.sresname{
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.sresaddress{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.sresaddress p{
+    font-size: 10px;
+}

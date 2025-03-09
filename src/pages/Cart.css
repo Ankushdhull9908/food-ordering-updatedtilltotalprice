@@ -109,6 +109,9 @@
     width: 200px;
     border: 0.1px solid #ddd;
     border-style: dotted;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .cartbox .cartbox{
@@ -306,4 +309,24 @@ button{
     gap: 20px;
     padding: 20px;
     margin: 20px 0px 20px 0px;
+}
+
+.emptycart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.emptycart button{
+    height: 45px;
+    width: 180px;
+    background-color: orange;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.emptycart button:hover{
+    background-color: darkorange;
 }

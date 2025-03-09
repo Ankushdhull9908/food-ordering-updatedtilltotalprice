@@ -10,8 +10,8 @@ function Menulist() {
             menu_list.map((item,index)=>{
                 return(
                     <div className='item' key={index}>
-                        <img src={item.menu_image} alt='itemimg'/>
-                        <p>{item.menu_name}</p>
+                        <img src={item.menu_image} alt={item.menu_name}/>
+                        
                         </div>
                 )
             })

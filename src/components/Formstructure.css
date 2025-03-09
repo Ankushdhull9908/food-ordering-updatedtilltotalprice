@@ -4,7 +4,7 @@
     align-items: left;
     flex-direction: column;
     height: 400px;
-    width: 500px;
+    width: 400px;
     
 }
 
@@ -19,28 +19,44 @@
 
 .formbox .loginheading{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 25%;
     width: 100%;
     align-items: center;
+    
 }
 
 .formbox .loginimage{
-    height: 50%;
-    width: 20%;
+    height: 70%;
+    width: 35%;
 }
 
 .formbox img{
-    height: 32px;
-    width: auto;
+    height: 70px;
+    width: 72px;
     border-radius: 50%;
 }
 
 form input{
+    padding: 10px;
     outline: none;
     height: 55px;
     width: 70%;
     border: 0.1px solid #ddd;
+}
+
+#createaccount{
+    color: orange;
+}
+
+
+form .loginstructure{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 
 form button{

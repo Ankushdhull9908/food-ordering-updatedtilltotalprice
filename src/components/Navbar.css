@@ -8,12 +8,19 @@
 }
 
 .navbar .logo{
+    transition: 0.1s ease-in-out;
     cursor: pointer;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     height: 80%;
     width: 30%;
+    cursor: pointer;
+
+}
+
+.navbar .logo:hover{
+    scale: 1.1;
 }
 
 .navbar .logo img{
@@ -39,14 +46,33 @@
 
 .navbar ul li{
     list-style: none;
+    font-weight: 600;
+    font-size: 17px;
+     cursor: pointer;
+     
+}
+
+
+
+
+.navbar ul li:hover{
+       color: orange;
+}
+
+.right .search{
+    cursor: pointer;
 }
 
 .navbar .right .signup1 button{
     height: 35px;
     width: 120px;
-    background-color: orange;
+    background-color: rgb(255, 166, 0);
     color: white;
     border: none;
+}
+
+.navbar .right .signup1 button:hover{
+    background-color: darkorange;
 }
 
 .cart1{

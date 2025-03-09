@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react'
 import MenuItems from '../components/MenuItems'
 import './Home.css'
 import Menulist from '../components/Menulist'
-import FoodCulture from '../components/FoodCulture'
 import Footer from '../components/Footer'
 import { assets } from '../assets/assets'
 import '../components/Header.css'
 import { useCart } from '../CartContext'
+import '../components/Foodculture.css'
 
 function Home() {
 
@@ -98,13 +98,21 @@ function Home() {
 
          <div className="headings">
          <h2>
-         Food Culture In Bahadurgarh
+         Food Culture In {city}
          </h2>
          </div>
-         <FoodCulture/>
-          
-         
-         
+         <div className='foodculture'>
+        <div className="foodculturebox">
+            <h4>Order Food Online in {city} </h4><br/>
+            <p>
+Welcome to {city}, a city known for its vibrant food culture and unique culinary delights. When it comes to food, {city} offers a plethora of options that are sure to appease your taste buds. Whether you're a local resident or a visitor, the diverse range of cuisines and dishes available here will leave you craving for more.
+
+One of the most convenient ways to satisfy your hunger is by ordering food online in {city}. With just a few clicks, you can explore a wide variety of delectable options and have them delivered right to your doorstep. No matter what your preferences are, you can find a plethora of restaurants offering food delivery services across the city.
+
+{city} is known for its love for Punjabi food, and you'll find an array of mouth-watering dishes that are popular here.</p>
+        </div>
+      
+    </div>
          </div>
          <Footer/>
 

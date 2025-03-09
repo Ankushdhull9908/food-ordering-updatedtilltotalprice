@@ -195,7 +195,7 @@ export const CartProvider = (props) => {
          // console.log(i.location.latitude,i.location.longitude,userlat,userlong)
           i.Distance = x
 
-          if(x<=10000){
+          if(x<=1000){
             return i
           }
         })
