@@ -111,13 +111,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 26vh;
+        height: 24vh;
         width: 100vw;
     }
 
     #headerimg{
-        height: 87%;
-        width: 87%;
+        height: 90%;
+        width: 90%;
         border-radius: 20px;
     }
 
