@@ -118,6 +118,25 @@
 
 @media (max-width:460px) {
     
+    .fooditems .fooditem{
+        display: flex;
+        flex-direction: row;
+        min-width: 380px;
+        min-height: 50px;
+        max-height: 140px;
+        margin: 0px 10px 40px 30px;
+    }
+
+    .fooditem .foodimg{
+        min-width: 180px;
+        min-height: 50px;
+        max-height: 100px;
+        
+    }
+    .fooditem .foodimg img{
+        min-width: 180px;
+        min-height: 70px;
+    }
 
 
 }

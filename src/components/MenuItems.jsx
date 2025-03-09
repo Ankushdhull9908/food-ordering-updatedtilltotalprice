@@ -42,6 +42,7 @@ function MenuItems() {
                         <h5>ITEMS AT ₹50</h5>
                         <img src={item.image} alt='error' onClick={()=> navigate(`/description/${item.id}`)}/>
                         </div>
+                        <div>
                         <div className="resname">
                         <h3>{item.name}</h3>
                         </div>
@@ -55,6 +56,8 @@ function MenuItems() {
                         <div className="resaddress">
                         <p>{item.location.address}</p>
                         </div>  
+                        </div>
+                        
                        
                       
                     </div>

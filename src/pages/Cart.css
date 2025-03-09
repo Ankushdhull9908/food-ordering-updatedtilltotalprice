@@ -1,6 +1,6 @@
 .cart{
     height: auto;
-    width: 78%;
+    width: 100%;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -329,4 +329,17 @@ button{
 
 .emptycart button:hover{
     background-color: darkorange;
+}
+
+
+@media (max-width:460px) {
+    .emptycart{
+        height: 100%;
+        width: 100%;
+    }
+
+    .emptycart img{
+        height: 60%;
+        width: 90%;
+    }
 }
