@@ -13,7 +13,7 @@ function Collections() {
     
 
     const filteredMenuItems = Menu.filter((i)=> i.category.split(" ").join("").toLowerCase() === (foodName).split(" ").join("").toLowerCase() || (i.name).split(" ").join("").toLowerCase() === (foodName).split(" ").join("").toLowerCase() )
-    
+
     const restaurantIds = filteredMenuItems.map((item) => item.restaurantId);
     const xyz = final.filter((i) => restaurantIds.includes(i.id));
         
@@ -38,7 +38,7 @@ function Collections() {
   return (
     <div className='collections'>
       {
-        xyz.length <=0 ? <div><img src={assets.nosearchresults} alt='nothingfound'/><p>Looks Like theres no Restaurant Near you😔</p></div> : <div><h2>{foodName}</h2>
+        xyz.length <=0 ? <div className='nosearchresult'><img src={assets.nosearchresults} alt='nothingfound'/><p>Looks Like theres no Restaurant Near you😔</p></div> : <div><h2>{foodName}</h2>
       <p>Restaurants To Explore</p></div>
       }
       

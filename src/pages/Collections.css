@@ -1,12 +1,17 @@
 .collections{
     height: 100%;
     width: 80%;
+   
+}
+
+.collections .nosearchresult{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-.collections img{
+.collections .nosearchresult img{
     height: 60vh;
     width: auto;
 }
