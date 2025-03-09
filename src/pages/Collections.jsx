@@ -38,7 +38,9 @@ function Collections() {
   return (
     <div className='collections'>
       {
-        xyz.length <=0 ? <div className='nosearchresult'><img src={assets.nosearchresults} alt='nothingfound'/><p>Looks Like theres no Restaurant Near you😔</p></div> : <div><h2>{foodName}</h2>
+        xyz.length <=0 ? <div className='nosearchresult'><img src={assets.nosearchresults} alt='nothingfound'/><p>Looks Like theres no Restaurant Near you😔</p></div> : 
+        <div className='collectionheading'>
+          <h2>{foodName}</h2>
       <p>Restaurants To Explore</p></div>
       }
       
