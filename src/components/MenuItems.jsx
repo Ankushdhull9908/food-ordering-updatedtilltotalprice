@@ -42,7 +42,7 @@ function MenuItems() {
                         <h5>ITEMS AT ₹50</h5>
                         <img src={item.image} alt='error' onClick={()=> navigate(`/description/${item.id}`)}/>
                         </div>
-                        <div>
+                        <div className='nameratingaddress'>
                         <div className="resname">
                         <h3>{item.name}</h3>
                         </div>
@@ -53,7 +53,9 @@ function MenuItems() {
                         <h5>{item.rating}</h5>
                         <h5> - {estimatedtime}min</h5>
                         </div>
+                        
                         <div className="resaddress">
+                            
                         <p>{item.location.address}</p>
                         </div>  
                         </div>

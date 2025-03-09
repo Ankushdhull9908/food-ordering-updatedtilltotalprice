@@ -12,6 +12,6 @@
 
 @media (max-width:460px) {
   .App{
-    width: 100%;
+    width: 100vw;
   }
 }
