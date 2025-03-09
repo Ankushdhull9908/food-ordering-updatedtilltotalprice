@@ -4,7 +4,7 @@
     justify-content: space-between;
     gap: 10px;
     align-items: center;
-    width: 80%;
+    width: 80vw;
 }
 
 .navbar .logo{
@@ -84,11 +84,13 @@
 }
 
 .cart1 p{
+    font-family: Arial, Helvetica, sans-serif;
     position: absolute;
     left: 12px;
     top: 12px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
+    font-weight: bolder;
 }
 
 

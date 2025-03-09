@@ -12,6 +12,7 @@ import menu_7 from './menu_7.png'
 import menu_8 from './menu_8.png'
 import loading from './loading.png'
 import emptycart from './emptycart.png'
+import nosearchresults from './nosearchresults.jpg'
 
 import food_2 from './food_2.jpg'
 
@@ -36,8 +37,11 @@ import profile from './profile.png'
 import payment from './payment.png'
 import location from './location.png'
 import check from './check.png'
+import menu_9 from './menu_9.png'
+import menu_10 from './menu_10.png'
 
 export const assets = {
+    nosearchresults,
     map,
     emptycart,
     check,
@@ -68,37 +72,46 @@ export const assets = {
 }
 
 export const menu_list = [
+    
     {
-        menu_name: "Salad",
-        menu_image: menu_1
-    },
-    {
-        menu_name: "Rolls",
+        menu_name: "Shake",
         menu_image: menu_2
     },
     {
-        menu_name: "Deserts",
+        menu_name: "Burger",
+        menu_image: menu_9
+    },
+    {
+        menu_name: "Cholle Bhature",
         menu_image: menu_3
     },
     {
-        menu_name: "Sandwich",
+        menu_name: "Poori",
         menu_image: menu_4
     },
     {
-        menu_name: "Cake",
+        menu_name: "Paratha",
         menu_image: menu_5
     },
     {
-        menu_name: "Pure Veg",
+        menu_name: "Idli",
         menu_image: menu_6
     },
     {
-        menu_name: "Pasta",
+        menu_name: "South Indian",
+        menu_image: menu_10
+    },
+    {
+        menu_name: "Coffee",
         menu_image: menu_7
     },
     {
-        menu_name: "Noodles",
+        menu_name: "Pan Cake",
         menu_image: menu_8
-    }]
+    },
+    {
+        menu_name: "Pakoda",
+        menu_image: menu_1
+    },]
 
 

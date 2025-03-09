@@ -10,7 +10,7 @@ function Search() {
     const [searchedResult,setSearchresult] = useState([])
         function search()
         {
-            const searchedResult = restaurants.filter((i)=> i.name.toLowerCase().split(" ").join("")  === searchtext.toLowerCase().split(" ").join("") || i.name.split(" ").join("") === searchtext.split(" ").join("") )
+            const searchedResult = restaurants.filter((i)=> i.name.split(" ").join("").toLowerCase()  === searchtext.split(" ").join("").toLowerCase() || i.cuisine.split(" ").join("").toLowerCase() === searchtext.split(" ").join("").toLowerCase() )
             console.log(searchedResult)
             setSearchresult(searchedResult)
         }

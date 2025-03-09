@@ -1,57 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { useCart } from '../CartContext'
+
 import './Formstructure.css'
+import SignUpstructure from './SignUpstructure'
+import LoginStructure from './LoginStructure'
 
 function FormStrcuture() {
-    const { login } = useCart()
-  const navigate = useNavigate()
-  const [name, setname] = useState('')
-  const [phone, setphone] = useState('')
-  const [pass, setpass] = useState('')
+
+
+  
    const [toggle,settoggle] = useState(false)
-   const [otp,setotp] = useState('')
-   const [showotp,setshowotp] = useState(false)
-   const [generatedotp,setgeneratedotp] = useState('')
-   console.log(typeof(otp))
-   console.log(typeof(generatedotp))
-
-   function otpgeneration()
-   {
-    var otp1 = 0;
-    for(var i=0;i<6;i++)
-    {
-      otp1+= Math.ceil(Math.random()*100)
-      
-    }
-    alert("YOUR OTP IS :"+otp1)
-    setgeneratedotp(otp1)
-   }
-
-   function verifytheotp()
-   {
-    
-    if(parseInt(otp)=== generatedotp){
-      alert("LOGIN SUCESSFUL")
-    }else{
-      alert("INVALID OTP")
-    }
-   }
-
-
-  function submit(e) {
-    //const data = { name: name, phone: phone, pass: pass }
-    //localStorage.setItem('logindata', JSON.stringify(data))
-    //login(data)
-    setname('')
-    setphone('')
-    setpass('')
-    e.preventDefault()
-  }
-
-  useEffect(()=>{
-
-  },[name])
+   
   return (
     <div className="formbox">
     <div className="loginheading">
@@ -79,36 +38,10 @@ function FormStrcuture() {
     <form>
       {
         toggle=== true ? (
-          <div className="loginstructure">
-        <input type='number' value={phone} onChange={(e)=> setphone(e.target.value)}/>
-        {
-          showotp===true? <input type='number' value={otp} onChange={(e)=> setotp(e.target.value)}/>:''
-        }
-        {
-          showotp===false ? <button onClick={(e)=> {
-                 setshowotp(true)
-                 setTimeout(otpgeneration,3000)
-                 e.preventDefault()
-                 
-          }}>Login</button> :''
-        }
-        {
-           showotp=== true ? <button onClick={(e)=> {
-            setshowotp(true)
-            verifytheotp()
-            e.preventDefault()
-            
-     }}>verify OTP</button> :''
-          
-        }
-
-      </div>
+          <LoginStructure/>
         ) : (
           <div className="signupstructure">
-            <input type='text' placeholder='Enter Name'/>
-            <input type='text' placeholder='Enter Phone' />
-            <input type='text' placeholder='Enter email' />
-            <button>Continue</button>
+            <SignUpstructure/>
            
             
       </div>

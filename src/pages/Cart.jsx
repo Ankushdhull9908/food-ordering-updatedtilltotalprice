@@ -25,7 +25,7 @@ function Cart() {
   
 
   const { logindata, address } = useCart()
-  const [toggle, settoggle] = useState(false)
+  const [formtoggle, setformtoggle] = useState(false)
   const [confaddress,setconfaddress] = useState(false)
   const [payment,setpayment] = useState(false)
 
@@ -35,8 +35,8 @@ function Cart() {
       {
         cart.length===0? (<div className='emptycart'>
           <img src={assets.emptycart} alt='emptycart'/>
-          <p>Looks like u havent buy Food</p>
-          <button onClick={()=> navigate('/')}>Buy Food</button>
+          <p>Delicious Food Waiting For Youuu!</p>
+          <button onClick={()=> navigate('/')}>Explore Restaurants</button>
         </div>) : (
           
       <div className='cartbox'>
@@ -54,7 +54,7 @@ function Cart() {
               <h4>{logindata.name} | {logindata.phone}</h4>
             </div>) : (
               <div className='notloggedin'>
-                <div className={toggle === false ? 'loginsignupbutton' : 'notshow'}>
+                <div className={formtoggle === false ? 'loginsignupbutton' : 'notshow'}>
                   <div className="loginheading">
                     <div className="accountheading">
                       <h1>Account</h1>
@@ -67,17 +67,17 @@ function Cart() {
 
                   </div>
                   <div className="buttoncollection">
-                  <button onClick={() => {
-                    settoggle(true)
-                  }}>Log in</button>
+                  <button id='loginbtn' onClick={() => {
+                    setformtoggle(true)
+                  }}>Have an Account?<br></br>LOG IN</button>
                   <button onClick={()=>{
-                    settoggle(true)
-                  }}>Sign up</button>
+                    setformtoggle(true)
+                  }}>New here?<br></br>SIGN UP</button>
                   </div>
                   
                 </div>
                 {
-                  toggle === true ? <FormStrcuture /> : <div></div>
+                  formtoggle === true ? <FormStrcuture /> : <div></div>
                 }
               </div>
             )
@@ -143,27 +143,38 @@ function Cart() {
               {
                 filteredRes.map((i)=>{
                   return(
-                    <div>
+                    <div className='cartresdetails'>
                     <img src={i.image} alt='error'/>
-                    <p>{i.name}</p>
+                    <h5>{i.name}</h5>
+                    <p>{i.location.city}</p>
                   </div>
                   )
                   
                 })
               }
+              
         </div>
+        
         
           {
             cart.map((i)=>{
               return(
 
                 <div className='cartitem'>
-                  <p>{i.name}</p>
-                  <p>{i.price}</p>
-                  <p>Quantity {i.quantity}</p>
+                  <div className="cartitemname">
+                  <h4>{i.name}</h4>
+                  </div>
+                  <div className="increasedescreasequantity">
                   <img src={assets.add_icon_green} alt='+' onClick={()=> increasequantity(i.id)}/>
+                  <p>{i.quantity}</p>
                   <img src={assets.remove_icon_red} alt='+' onClick={()=> decreasequantity(i.id)}/>
-
+                  </div>
+                  <div className="cartitemprice">
+                  <h4>₹{i.price}</h4>
+                  </div>
+                  
+                  
+                  
                 </div>
               )
             })

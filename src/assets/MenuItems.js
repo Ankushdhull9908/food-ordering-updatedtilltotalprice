@@ -46,7 +46,7 @@ export const Menu = [
         },
         {
         id: 302,
-        name: "Chole Bhature",
+        name: "Cholle Bhature",
         price: 180,
         quantity:0,
         category: "Main Course",
@@ -160,6 +160,24 @@ export const Menu = [
         quantity:0,
         restaurantId: 9,
         image: "https://pizzahut.com/cheesegarlicbread.jpg"
-        }
+        },
+        {
+            id: 1001,
+            name: "Coffee",
+            price: 350,
+            category: "Coffee",
+            quantity:0,
+            restaurantId: 9,
+            image: "https://pizzahut.com/pepperoni.jpg"
+            },
+            {
+            id: 1002,
+            name: "Paratha",
+            price: 180,
+            category: "Paratha",
+            quantity:0,
+            restaurantId: 9,
+            image: "https://pizzahut.com/cheesegarlicbread.jpg"
+            }
   ]
   

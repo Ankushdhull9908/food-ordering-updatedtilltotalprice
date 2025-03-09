@@ -12,7 +12,6 @@ export const CartProvider = (props) => {
     const [totalprice,settotalprice] = useState(0)
     const [logindata,setLogindata] = useState({name:null,phone:null})
     const [address,setaddress] = useState({address:null,city:null,pincode:null,country:null})
-   const distance = ''
     const [userlat,setuserlat] = useState()
     const [userlong,setlong] = useState()
 
@@ -26,6 +25,7 @@ export const CartProvider = (props) => {
 
     useEffect(()=>{
          var x = JSON.parse(localStorage.getItem('useraddress'))
+
          console.log(x)
 
          if(x===null)
@@ -195,7 +195,7 @@ export const CartProvider = (props) => {
          // console.log(i.location.latitude,i.location.longitude,userlat,userlong)
           i.Distance = x
 
-          if(x<=1000){
+          if(x<=10000){
             return i
           }
         })

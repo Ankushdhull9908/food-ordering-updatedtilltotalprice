@@ -9,6 +9,7 @@ import Signup from './pages/Signup';
 import Profile from './pages/Profile';
 import Search from './pages/Search';
 import Description from './pages/Description';
+import Collections from './pages/Collections';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Route path='/profile/:name' element={<Profile/>}/>
       <Route path='/description/:id' element={<Description/>}/>
       <Route path='/search' element={<Search/>}/>
+      <Route path='/collection/:foodName' element={<Collections/>}/>
       </Routes>
       
     </div>

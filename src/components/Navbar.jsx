@@ -15,11 +15,11 @@ function Navbar() {
   const navigate = useNavigate()
   return (
     <div className='navbar'>
-        <div className="logo">
-              
-              <img src={assets.logo} alt='logo' onClick={()=>{
+        <div className="logo" onClick={()=>{
                 navigate('/')
-              }}/>
+              }}>
+              
+              <img src={assets.logo} alt='logo' />
         </div>
         <ul>
             <li>Home</li>

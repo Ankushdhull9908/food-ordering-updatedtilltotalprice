@@ -134,7 +134,7 @@ export const restaurants = [
       },
       image: 'https://b.zmtcdn.com/data/pictures/chains/5/19047495/fdf5e5079a0352d872204dad39bc0f08.jpg?output-format=webp&fit=around|771.75:416.25&crop=771.75:416.25;*,*',
       menu: [901, 902]
-    },/*
+    },
     {
       id: 10,
       name: "Barbeque Nation",
@@ -147,7 +147,7 @@ export const restaurants = [
         latitude: 28.5239,
         longitude: 77.2068
       },
-      image: barbequee,
+      image: 'https://media.istockphoto.com/id/1266579516/photo/indian-traditional-thali-food-dal-makhani-served-with-chapati-papad-kadai-paneer-or-lemon-on.jpg?s=612x612&w=0&k=20&c=_OYAXix_rJeoEgOxyPc-k6wZtZ_-cbcdO_05257zjno=',
       menu: [1001, 1002]
     },
     {
@@ -162,7 +162,7 @@ export const restaurants = [
         latitude: 28.5211,
         longitude: 77.1976
       },
-      image: chaayos,
+      image: 'https://media.istockphoto.com/id/1266579516/photo/indian-traditional-thali-food-dal-makhani-served-with-chapati-papad-kadai-paneer-or-lemon-on.jpg?s=612x612&w=0&k=20&c=_OYAXix_rJeoEgOxyPc-k6wZtZ_-cbcdO_05257zjno=',
       menu: [1101, 1102]
     },
     {
@@ -177,7 +177,7 @@ export const restaurants = [
         latitude: 28.5265,
         longitude: 77.1939
       },
-      image: coffeeday,
+      image: 'https://media.istockphoto.com/id/1266579516/photo/indian-traditional-thali-food-dal-makhani-served-with-chapati-papad-kadai-paneer-or-lemon-on.jpg?s=612x612&w=0&k=20&c=_OYAXix_rJeoEgOxyPc-k6wZtZ_-cbcdO_05257zjno=',
       menu: [1201, 1202]
     },
     {
@@ -192,7 +192,7 @@ export const restaurants = [
         latitude: 28.5154,
         longitude: 77.1896
       },
-      image: spicemantra,
+      image: 'https://media.istockphoto.com/id/1266579516/photo/indian-traditional-thali-food-dal-makhani-served-with-chapati-papad-kadai-paneer-or-lemon-on.jpg?s=612x612&w=0&k=20&c=_OYAXix_rJeoEgOxyPc-k6wZtZ_-cbcdO_05257zjno=',
       menu: [1301, 1302]
     },
     {
@@ -207,7 +207,7 @@ export const restaurants = [
         latitude: 28.5374,
         longitude: 77.2060
       },
-      image: Royaltadka,
+      image: 'https://media.istockphoto.com/id/1266579516/photo/indian-traditional-thali-food-dal-makhani-served-with-chapati-papad-kadai-paneer-or-lemon-on.jpg?s=612x612&w=0&k=20&c=_OYAXix_rJeoEgOxyPc-k6wZtZ_-cbcdO_05257zjno=',
       menu: [1401, 1402]
     },
     {
@@ -222,7 +222,7 @@ export const restaurants = [
         latitude: 28.5521,
         longitude: 77.2347
       },
-      image: safron,
+      image: 'https://media.istockphoto.com/id/1266579516/photo/indian-traditional-thali-food-dal-makhani-served-with-chapati-papad-kadai-paneer-or-lemon-on.jpg?s=612x612&w=0&k=20&c=_OYAXix_rJeoEgOxyPc-k6wZtZ_-cbcdO_05257zjno=',
       menu: [1501, 1502]
     },
 
@@ -232,7 +232,7 @@ export const restaurants = [
         cuisine: "South Indian",
         rating: 4.3,
         deliveryTime: "20 mins",
-        image: curry,
+        image: 'https://media.istockphoto.com/id/1266579516/photo/indian-traditional-thali-food-dal-makhani-served-with-chapati-papad-kadai-paneer-or-lemon-on.jpg?s=612x612&w=0&k=20&c=_OYAXix_rJeoEgOxyPc-k6wZtZ_-cbcdO_05257zjno=',
         location: {
           city: "Bahadurgarh",
           address: "Sector 9, Bahadurgarh 124507",
@@ -247,7 +247,7 @@ export const restaurants = [
         cuisine: "North Indian",
         rating: 4.7,
         deliveryTime: "40 mins",
-        image: tandoorinights,
+        image: 'https://media.istockphoto.com/id/1266579516/photo/indian-traditional-thali-food-dal-makhani-served-with-chapati-papad-kadai-paneer-or-lemon-on.jpg?s=612x612&w=0&k=20&c=_OYAXix_rJeoEgOxyPc-k6wZtZ_-cbcdO_05257zjno=',
         location: {
           city: "Bahadurgarh",
           address: "Delhi-Rohtak Road, Bahadurgarh 124507",
@@ -255,7 +255,7 @@ export const restaurants = [
           longitude: 76.9250
         },
         menu: [1701, 1702]
-      },*/
+      },
       {
         id: 18,
         name: "Chai Chaska",
@@ -330,14 +330,14 @@ export const restaurants = [
           longitude: 76.9345
         },
         menu: [2201, 2202]
-      },/*
+      },
       {
         id: 23,
         name: "Masala Magic",
         cuisine: "Indian Fusion",
         rating: 4.6,
         deliveryTime: "35 mins",
-        image: masalamagic,
+        image: 'https://media.istockphoto.com/id/1266579516/photo/indian-traditional-thali-food-dal-makhani-served-with-chapati-papad-kadai-paneer-or-lemon-on.jpg?s=612x612&w=0&k=20&c=_OYAXix_rJeoEgOxyPc-k6wZtZ_-cbcdO_05257zjno=',
         location: {
           city: "Bahadurgarh",
           address: "Sector 6, Bahadurgarh 124507",
@@ -352,15 +352,15 @@ export const restaurants = [
         cuisine: "Home-style Indian",
         rating: 4.8,
         deliveryTime: "40 mins",
-        image: gharkadhaba,
+        image: 'https://media.istockphoto.com/id/1266579516/photo/indian-traditional-thali-food-dal-makhani-served-with-chapati-papad-kadai-paneer-or-lemon-on.jpg?s=612x612&w=0&k=20&c=_OYAXix_rJeoEgOxyPc-k6wZtZ_-cbcdO_05257zjno=',
         location: {
           city: "Bahadurgarh",
           address: "Bus Stand Road, Bahadurgarh 124507",
           latitude: 28.6905,
           longitude: 76.9218
         },
-        menu:[2401, 2402] 
-      }*/
+        menu:[2401, 2402]
+      }
   ];
   
   export default restaurants;
