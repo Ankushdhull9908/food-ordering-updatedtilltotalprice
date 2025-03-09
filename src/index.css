@@ -28,12 +28,12 @@ html, body {
 @media (max-width:460px) {
   html, body {
     margin-left: 14px;
-    width: 96vw;
+    width: 100vw;
     
   }
   
   #root {
-    width: 96vw;
+    width: 100vw;
   }
 
   

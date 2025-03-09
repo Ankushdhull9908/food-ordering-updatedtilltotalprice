@@ -118,6 +118,7 @@
     #headerimg{
         height: 87%;
         width: 87%;
+        border-radius: 20px;
     }
 
     .headerimagelogo{

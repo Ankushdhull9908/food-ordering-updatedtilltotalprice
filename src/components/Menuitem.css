@@ -117,23 +117,7 @@
 }
 
 @media (max-width:460px) {
-    .fooditems .fooditem{
-        min-height: 120px;
-
-        max-height: 150px;
-        width: 140px;
-        margin: 10px 10px 40px 40px;
-    }
-
-    .fooditem .foodimg img{
-        border-radius: 15px;
-        height: 90px;
-        width: auto;
-    }
-
-    .ratingdeliverytime img{
-        height: 12px;
-    }
+    
 
 
 }

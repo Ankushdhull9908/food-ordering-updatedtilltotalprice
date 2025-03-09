@@ -8,3 +8,10 @@
   flex-direction: column;
 
 }
+
+
+@media (max-width:460px) {
+  .App{
+    width: 100%;
+  }
+}
