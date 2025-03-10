@@ -1,0 +1,189 @@
+.description{
+    width: 55%;
+    height: 100%;
+}
+
+.description .restaurantsection{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: left;
+    flex-direction: column;
+    height: 80vh;
+    width: 100%;
+
+}
+
+.restaurantsection .restaurantinfobox{
+    max-height: 210px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    width: 100%;
+    border-radius: 25px;
+    border: 0.1px solid #ddd;
+}
+
+.restaurantinfobox .descrating{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+}
+
+.restaurantinfobox .descsourcedestination{
+    padding: 5px;
+    margin: 15px 0px;
+    position: relative;
+    height: 80%;
+    width: 150px;
+}
+
+.restaurantinfobox #cuisine{
+   
+    font-size: 13px;
+    color: orange;
+    cursor: pointer;
+}
+
+.descsourcedestination .outlet{
+    margin-bottom: 5px;
+    gap: 5px;
+    right: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.descsourcedestination .outlet p{
+    color: grey;
+}
+
+.descsourcedestination .desdestination{
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.restaurantinfobox .descsourcedestination img{
+    height: 50px;
+    
+}
+
+.description .deals{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-direction: column;
+    align-items: left;
+    height: auto;
+    max-height: 160px;
+}
+
+.description .searchfordishes{
+    height: 50px;
+    width: 100%;
+}
+
+.searchfordishes input{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    border: none;
+    outline: none;
+background-color: #ddd;
+}
+
+.description .deals .diffbanks{
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    height: 80px;
+    gap: 20px;
+    border-radius: 10px;
+    
+}
+
+.deals .diffbanks .bank{
+    border-radius: 10px;
+    padding: 10px;
+    border: 0.1px solid #ddd;
+    display: flex;
+    gap: 20px;
+}
+
+.restaurantinfobox .descrating img{
+    height: 28px;
+    width: auto;
+}
+
+.description .descriptionfooditems{
+    height: auto;
+}
+
+.description .descriptionfooditems .descfooditem{
+    margin: 10px 0px 10px 0px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   max-height: 400px;
+   height: auto;
+   width: 100%;
+   border-bottom: 0.1px solid #ddd;
+}
+
+.descfooditem .descfoodimg{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.descfooditem .descfoodimg button{
+    position: absolute;
+    bottom: -14px;
+    height: 35px;
+    width: 140px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    
+}
+
+.descfooditem .descfoodimg img{
+    
+    border-radius: 15px;
+}
+
+.descfooditem .descfoodimg button:hover{
+    background-color: #ddd;
+}
+
+.descriptionfooditems .descfooditem img{
+    height: 120px;
+    width: 150px;
+    
+}
+
+.descfooditem .descresname img{
+    height: 20px;
+    width: 20px;
+}  
+
+.descfooditem .descresname{
+    padding: 15px;
+     display: flex;
+     flex-direction: column;
+    height: 100%;
+    gap: 10px;
+}

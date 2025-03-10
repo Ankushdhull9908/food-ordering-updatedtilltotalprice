@@ -13,6 +13,7 @@ import menu_8 from './menu_8.png'
 import loading from './loading.png'
 import emptycart from './emptycart.png'
 import nosearchresults from './nosearchresults.jpg'
+import destination from './destination.png'
 
 import food_2 from './food_2.jpg'
 
@@ -39,8 +40,12 @@ import location from './location.png'
 import check from './check.png'
 import menu_9 from './menu_9.png'
 import menu_10 from './menu_10.png'
+import axisbank from './axisbank.png'
+import yesbank from './yesbank.png'
 
 export const assets = {
+    yesbank,
+    axisbank,
     nosearchresults,
     map,
     emptycart,
@@ -50,6 +55,7 @@ export const assets = {
     payment,
     loading,
     logo,
+    destination,
     food_2,
     basket_icon,
     header_img,
