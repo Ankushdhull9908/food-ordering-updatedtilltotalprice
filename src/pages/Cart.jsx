@@ -161,7 +161,11 @@ function Cart() {
               return(
 
                 <div className='cartitem'>
+                  {
+                      i.type=== "veg"? <img src={assets.veg} alt='veg'/> : <img src={assets.nonveg} alt='nonveg'/>
+                    }
                   <div className="cartitemname">
+                    
                   <h4>{i.name}</h4>
                   </div>
                   <div className="increasedescreasequantity">

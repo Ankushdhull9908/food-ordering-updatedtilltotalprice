@@ -7,7 +7,6 @@ import { useCart } from '../CartContext'
 
 function Navbar() {
   const {logindata,quantity} = useCart()
-  console.log(logindata)
   useEffect(()=>{
         
   },[])

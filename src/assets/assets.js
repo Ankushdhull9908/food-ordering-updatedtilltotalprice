@@ -42,8 +42,12 @@ import menu_9 from './menu_9.png'
 import menu_10 from './menu_10.png'
 import axisbank from './axisbank.png'
 import yesbank from './yesbank.png'
+import nonveg from './nonveg.png'
+import veg from './vegsymbol.jpg'
 
 export const assets = {
+    veg,
+    nonveg,
     yesbank,
     axisbank,
     nosearchresults,

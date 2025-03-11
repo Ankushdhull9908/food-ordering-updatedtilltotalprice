@@ -5,12 +5,10 @@ import { assets } from '../assets/assets'
 import { useNavigate } from 'react-router-dom'
 
 function MenuItems() {
-    
-    const [btntext,setbtntext]= useState('Show More')
     const navigate =useNavigate()
 
     const {final } = useCart()
-    const [visibleitem,setvisibleitem] = useState(4)
+    const [visibleitem,setvisibleitem] = useState(8)
 
     function LoadMore()
     {
@@ -20,7 +18,7 @@ function MenuItems() {
     function ShowLess()
     {
         
-        setvisibleitem(4)
+        setvisibleitem(8)
        // setbtntext('Show More')
     }
     useEffect(()=>{

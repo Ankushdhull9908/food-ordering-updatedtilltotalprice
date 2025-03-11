@@ -14,6 +14,9 @@ export const CartProvider = (props) => {
     const [address,setaddress] = useState({address:null,city:null,pincode:null,country:null})
     const [userlat,setuserlat] = useState()
     const [userlong,setlong] = useState()
+    const [resid,setresid] = useState(0)
+    const [visitanotherres,setvisitanotherres] = useState(false)
+    const [startfreshcart,setstartfreshcart]= useState(false)
 
     useEffect(()=>{
            
@@ -26,13 +29,11 @@ export const CartProvider = (props) => {
     useEffect(()=>{
          var x = JSON.parse(localStorage.getItem('useraddress'))
 
-         console.log(x)
 
          if(x===null)
          {
             setaddress({...address,address:null,city:null,pincode:null,country:null})
          }else{
-            console.log(x)
             setuserlat(x.lat)
             setlong(x.lon)
             setaddress({...address,address:x.display_name,city:x.address.city,pincode:x.address.postcode,country:x.address.country})
@@ -40,7 +41,6 @@ export const CartProvider = (props) => {
          }
     },[userlat])
 
-    console.log(userlat,userlong)
 
 
     useEffect(()=>{
@@ -56,7 +56,7 @@ export const CartProvider = (props) => {
 
 
     useEffect(()=>{
-        var x= JSON.parse(localStorage.getItem('logindata')) 
+        var x= JSON.parse(localStorage.getItem('logindata'))
        // console.log(x)
         if(x===null){
            // console.log(x)
@@ -71,25 +71,46 @@ export const CartProvider = (props) => {
     },[])
 
 
-   // console.log(quantity)
- 
-    const addToCart = (item) => {
+    function emptycart()
+    {
+       setCart([...cart,setCart((prev)=> prev.length = 0)])
+       setquantity(0)
+    }
+
+
+    const addToCart = (item,res) => {
+        res = parseInt(res)
         const index = Menu.findIndex((i)=> i.id === item)
         const cartindex=  cart.findIndex((i)=> i.id === item)
 
         if(cart.length<=0){
+            
+            setresid(res)
             setCart([...cart,Menu[index]])
+            
         Menu[index].quantity +=1;
         return
         }else if(cartindex===-1){
+            if(res!== resid)
+                {
+                    setvisitanotherres(true)
+                    return
+                }
             setCart([...cart,Menu[index]])
        Menu[index].quantity +=1;
         }
         
         else{
+            if(res!== resid)
+                {
+                    setvisitanotherres(true)
+                    //alert("Looks Like youre visiting different restaurant")
+                    return
+                }
             cart[cartindex].quantity+=1
         }
     };
+
 
     useEffect(()=>{
            setquantity(0)
@@ -100,8 +121,19 @@ export const CartProvider = (props) => {
            })
     },[cart])
 
-    console.log(totalprice)
+    const visitresnotification=(x)=>
+    {
 
+        if(x==0)
+        {
+            setvisitanotherres(false)
+        }else{
+            setvisitanotherres(false)
+            //setstartfreshcart(true)
+          //  emptycart()
+        }
+        
+    }
     
 
     const removeFromCart=(item)=>{
@@ -115,8 +147,7 @@ export const CartProvider = (props) => {
     }
 
     const login=(item)=>{
-        
-        console.log('NAME:',item)
+
        setLogindata({...logindata,name:item.name,phone:item.phone,pass:item.pass})
     }
 
@@ -156,7 +187,6 @@ export const CartProvider = (props) => {
       }
 
       async function getLocationdata(latitude, longitude) {
-        console.log(latitude,longitude)
         const key = 'pk.d7129324a8f6a663854d5d729340a752';
     
         try {
@@ -207,7 +237,7 @@ export const CartProvider = (props) => {
         const FullLength = Math.ceil((final.length)/2)
       //  console.log(FullLength)*/
     return (
-        <CartContext.Provider value={{getuserlatlong,address,final,FullLength,login,logindata,userlat,AddAddress,addToCart,cart,increasequantity,decreasequantity,quantity,totalprice/*haversine,distance,, removeFromCart,,logindata,,totalprice,allproducttotal,AddAddress*/}}>
+        <CartContext.Provider value={{visitanotherres,visitresnotification,getuserlatlong,address,final,FullLength,login,logindata,userlat,AddAddress,addToCart,cart,increasequantity,decreasequantity,quantity,totalprice/*haversine,distance,, removeFromCart,,logindata,,totalprice,allproducttotal,AddAddress*/}}>
             {props.children}
         </CartContext.Provider>
     );

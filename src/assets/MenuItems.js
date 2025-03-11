@@ -1,256 +1,284 @@
 export const Menu = [
-    {
-        id: 101,
-        name: "Whopper",
-        price: 199,
-        category: "Burger",
-        restaurantId: 1,
-        quantity: 0,
-        image: "https://www.burgerking.ee/images/optimized/products/whopper-cheese-desktop-c64166b62b2ed58ff82e5ff7a969a046.png"
-      },
-      {
-        id: 102,
-        name: "Crispy Chicken Burger",
-        price: 179,
-        category: "Burger",
-        restaurantId: 1,
-        quantity: 0,
-        image: "https://www.kitchensanctuary.com/wp-content/uploads/2019/08/Crispy-Chicken-Burger-square-FS-4518.jpg"
-      },
-      {
-        id: 103,
-        name: "French Fries",
-        price: 99,
-        category: "Snacks",
-        restaurantId: 1,
-        quantity: 0,
-        image: "https://sausagemaker.com/wp-content/uploads/Homemade-French-Fries_8.jpg"
-      },
-      {
-        id: 104,
-        name: "Chicken Nuggets",
-        price: 149,
-        category: "Snacks",
-        restaurantId: 1,
-        quantity: 0,
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Chicken_Nuggets.jpg/640px-Chicken_Nuggets.jpg"
-      },
-      {
-        id: 201,
-        name: "Margherita Pizza",
-        price: 249,
-        category: "Pizza",
-        restaurantId: 2,
-        quantity: 0,
-        image: "https://static.toiimg.com/thumb/56868564.cms?imgsize=1948751&width=800&height=800"
-      },
-      {
-        id: 202,
-        name: "Pepperoni Pizza",
-        price: 299,
-        category: "Pizza",
-        restaurantId: 2,
-        quantity: 0,
-        image: "https://www.simplyrecipes.com/thmb/KE6iMblr3R2Db6oE8HdyVsFSj2A=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__09__easy-pepperoni-pizza-lead-3-1024x682-583b275444104ef189d693a64df625da.jpg"
-      },
-      {
-        id: 203,
-        name: "Garlic Bread",
-        price: 129,
-        category: "Sides",
-        restaurantId: 2,
-        quantity: 0,
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTrIDSrMqdEAzQbW7htOG5EYPrYmuYXQTXhw&s"
-      },
-      {
-        id: 204,
-        name: "Stuffed Cheesy Bread",
-        price: 179,
-        category: "Sides",
-        restaurantId: 2,
-        quantity: 0,
-        image: "https://www.seriouseats.com/thmb/4cAX_ZO3k7PvpnJikLqRcFcpo18=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__slice.seriouseats.com__images__2011__12__20111214-chain-reaction-dominos-cheesy-bread-primary-59c5a902ed4e4e4a86a8792bf0106422.jpg"
-      },
-      {
-        id: 301,
-        name: "Rajma Chawal",
-        price: 159,
-        category: "Main Course",
-        restaurantId: 3,
-        quantity: 0,
-        image: "https://www.vikhrolicucina.com/uploads/stories/1582355956_Rajmachawal.jpg"
-      },
-      {
-        id: 302,
-        name: "Chole Bhature",
-        price: 149,
-        category: "Main Course",
-        restaurantId: 3,
-        quantity: 0,
-        image: "https://media.vogue.in/wp-content/uploads/2020/08/chole-bhature-recipe.jpg"
-      },
-      {
-        id: 303,
-        name: "Paneer Tikka",
-        price: 199,
-        category: "Starters",
-        restaurantId: 3,
-        quantity: 0,
-        image: "https://sharethespice.com/wp-content/uploads/2024/02/Paneer-Tikka-Featured.jpg"
-      },
-      {
-        id: 304,
-        name: "Dal Makhani",
-        price: 179,
-        category: "Main Course",
-        restaurantId: 3,
-        quantity: 0,
-        image: "https://myfoodstory.com/wp-content/uploads/2018/08/Dal-Makhani-New-3.jpg"
-      },
-      {
-        id: 401,
-        name: "Zinger Burger",
-        price: 199,
-        category: "Burger",
-        restaurantId: 4,
-        quantity: 0,
-        image: "https://images.ctfassets.net/wtodlh47qxpt/7CfEtEhYbDMoz47g2mOAq9/a4213ce3bcd2d18fa63bcd5107ca8611/D-K696-prod?h=300&w=400&fm=webp&fit=fill"
-      },
-      {
-        id: 402,
-        name: "Hot Wings (6 pcs)",
-        price: 229,
-        category: "Chicken",
-        restaurantId: 4,
-        quantity: 0,
-        image: "https://indianheartbeat.in/wp-content/uploads/2023/01/toppng.com-kfc-wings-chicken-hot-wings-442x256-1.png"
-      },
-      {
-        id: 403,
-        name: "Chicken Popcorn",
-        price: 179,
-        category: "Snacks",
-        restaurantId: 4,
-        quantity: 0,
-        image: "https://theyummydelights.com/wp-content/uploads/2021/07/popcorn-chicken-9.jpg"
-      },
-      {
-        id: 404,
-        name: "Veg Strips",
-        price: 149,
-        category: "Snacks",
-        restaurantId: 4,
-        quantity: 0,
-        image: "https://c.ndtvimg.com/2024-01/g3j6glm8_finger_625x300_25_January_24.jpg?im=FeatureCrop,algorithm=dnn,width=384,height=384"
-      },
-      {
-        id: 501,
-        name: "Raj Kachori",
-        price: 99,
-        category: "Chaat",
-        restaurantId: 5,
-        quantity: 0,
-        image: "https://indiasweethouse.in/cdn/shop/files/RajKachori.png?v=1718889710"
-      },
-      {
-        id: 502,
-        name: "Paneer Tikka",
-        price: 199,
-        category: "Starters",
-        restaurantId: 5,
-        quantity: 0,
-        image: "https://cookingfromheart.com/wp-content/uploads/2017/03/Paneer-Tikka-Masala-4.jpg"
-      },
-      {
-        id: 503,
-        name: "Dhokla",
-        price: 129,
-        category: "Snacks",
-        restaurantId: 5,
-        quantity: 0,
-        image: "https://images.slurrp.com/prodrecipe_images/cms/34ngoe1snoy.webp"
-      },
-      {
-        id: 504,
-        name: "Chole Bhature",
-        price: 149,
-        category: "Main Course",
-        restaurantId: 5,
-        quantity: 0,
-        image: "https://img-global.cpcdn.com/recipes/87c52cb9ca601252/1200x630cq70/photo.jpg"
-      },
-      {
-        id: 601,
-        name: "Masala Dosa",
-        price: 149,
-        category: "South Indian",
-        restaurantId: 6,
-        quantity: 0,
-        image: "https://www.mydelicious-recipes.com/home/images/120_1080_1080/mydelicious-recipes-masala-dosa-with-batter"
-      },
-      {
-        id: 602,
-        name: "Idli Sambar",
-        price: 99,
-        category: "South Indian",
-        restaurantId: 6,
-        quantity: 0,
-        image: "https://t4.ftcdn.net/jpg/04/39/31/29/360_F_439312935_lxOEQSqasYc5GeyHKgYJXWCIFm8gmQUN.jpg"
-      },
-      {
-        id: 603,
-        name: "Rava Kesari",
-        price: 119,
-        category: "Dessert",
-        restaurantId: 6,
-        quantity: 0,
-        image: "https://cookingfromheart.com/wp-content/uploads/2017/08/Rava-Kesari-6.jpg"
-      },
-      {
-        id: 604,
-        name: "Medu Vada",
-        price: 89,
-        category: "South Indian",
-        restaurantId: 6,
-        quantity: 0,
-        image: "https://www.akshataskitchen.com/wp-content/uploads/2021/11/meduvadatn.png"
-      },
-      {
-        id: 701,
-        name: "McAloo Tikki Burger",
-        price: 99,
-        category: "Burger",
-        restaurantId: 7,
-        quantity: 0,
-        image: "https://content.jdmagicbox.com/v2/comp/mumbai/i8/022pxx22.xx22.141201144028.g7i8/catalogue/mcdonald-s-andheri-east-mumbai-fast-food-01jqspvjqp.jpg"
-      },
-      {
-        id: 702,
-        name: "McSpicy Chicken Burger",
-        price: 179,
-        category: "Burger",
-        restaurantId: 7,
-        quantity: 0,
-        image: "https://content.jdmagicbox.com/v2/comp/mumbai/i8/022pxx22.xx22.141201144028.g7i8/catalogue/mcdonald-s-andheri-east-mumbai-fast-food-01jqspvjqp.jpg"
-      },
-      {
-        id: 703,
-        name: "Fries (Large)",
-        price: 129,
-        category: "Snacks",
-        restaurantId: 7,
-        quantity: 0,
-        image: "https://content.jdmagicbox.com/v2/comp/mumbai/i8/022pxx22.xx22.141201144028.g7i8/catalogue/mcdonald-s-andheri-east-mumbai-fast-food-01jqspvjqp.jpg"
-      },
-      {
-        id: 704,
-        name: "McFlurry Oreo",
-        price: 139,
-        category: "Dessert",
-        restaurantId: 7,
-        quantity: 0,
-        image: "https://content.jdmagicbox.com/v2/comp/mumbai/i8/022pxx22.xx22.141201144028.g7i8/catalogue/mcdonald-s-andheri-east-mumbai-fast-food-01jqspvjqp.jpg"
-      },
+  {
+    id: 101,
+    name: "Whopper",
+    price: 199,
+    category: "Burger",
+    restaurantId: 1,
+    quantity: 0,
+    image: "https://www.burgerking.ee/images/optimized/products/whopper-cheese-desktop-c64166b62b2ed58ff82e5ff7a969a046.png",
+    type: "nonveg"
+  },
+  {
+    id: 102,
+    name: "Crispy Chicken Burger",
+    price: 179,
+    category: "Burger",
+    restaurantId: 1,
+    quantity: 0,
+    image: "https://www.kitchensanctuary.com/wp-content/uploads/2019/08/Crispy-Chicken-Burger-square-FS-4518.jpg",
+    type: "nonveg"
+  },
+  {
+    id: 103,
+    name: "French Fries",
+    price: 99,
+    category: "Snacks",
+    restaurantId: 1,
+    quantity: 0,
+    image: "https://sausagemaker.com/wp-content/uploads/Homemade-French-Fries_8.jpg",
+    type: "veg"
+  },
+  {
+    id: 104,
+    name: "Chicken Nuggets",
+    price: 149,
+    category: "Snacks",
+    restaurantId: 1,
+    quantity: 0,
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Chicken_Nuggets.jpg/640px-Chicken_Nuggets.jpg",
+    type: "nonveg"
+  },
+  {
+    id: 201,
+    name: "Margherita Pizza",
+    price: 249,
+    category: "Pizza",
+    restaurantId: 2,
+    quantity: 0,
+    image: "https://static.toiimg.com/thumb/56868564.cms?imgsize=1948751&width=800&height=800",
+    type: "veg"
+  },
+  {
+    id: 202,
+    name: "Pepperoni Pizza",
+    price: 299,
+    category: "Pizza",
+    restaurantId: 2,
+    quantity: 0,
+    image: "https://www.simplyrecipes.com/thmb/KE6iMblr3R2Db6oE8HdyVsFSj2A=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__09__easy-pepperoni-pizza-lead-3-1024x682-583b275444104ef189d693a64df625da.jpg",
+    type: "nonveg"
+  },
+  {
+    id: 203,
+    name: "Garlic Bread",
+    price: 129,
+    category: "Sides",
+    restaurantId: 2,
+    quantity: 0,
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTrIDSrMqdEAzQbW7htOG5EYPrYmuYXQTXhw&s",
+    type: "veg"
+  },
+  {
+    id: 204,
+    name: "Stuffed Cheesy Bread",
+    price: 179,
+    category: "Sides",
+    restaurantId: 2,
+    quantity: 0,
+    image: "https://www.seriouseats.com/thmb/4cAX_ZO3k7PvpnJikLqRcFcpo18=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__slice.seriouseats.com__images__2011__12__20111214-chain-reaction-dominos-cheesy-bread-primary-59c5a902ed4e4e4a86a8792bf0106422.jpg",
+    type: "veg"
+  },
+  {
+    id: 301,
+    name: "Rajma Chawal",
+    price: 159,
+    category: "Main Course",
+    restaurantId: 3,
+    quantity: 0,
+    image: "https://www.vikhrolicucina.com/uploads/stories/1582355956_Rajmachawal.jpg",
+    type: "veg"
+  },
+  {
+    id: 302,
+    name: "Chole Bhature",
+    price: 149,
+    category: "Main Course",
+    restaurantId: 3,
+    quantity: 0,
+    image: "https://media.vogue.in/wp-content/uploads/2020/08/chole-bhature-recipe.jpg",
+    type: "veg"
+  },
+  {
+    id: 303,
+    name: "Paneer Tikka",
+    price: 199,
+    category: "Starters",
+    restaurantId: 3,
+    quantity: 0,
+    image: "https://sharethespice.com/wp-content/uploads/2024/02/Paneer-Tikka-Featured.jpg",
+    type: "veg"
+  },
+  {
+    id: 304,
+    name: "Dal Makhani",
+    price: 179,
+    category: "Main Course",
+    restaurantId: 3,
+    quantity: 0,
+    image: "https://myfoodstory.com/wp-content/uploads/2018/08/Dal-Makhani-New-3.jpg",
+    type: "veg"
+  },
+  {
+    id: 401,
+    name: "Zinger Burger",
+    price: 199,
+    category: "Burger",
+    restaurantId: 4,
+    quantity: 0,
+    image: "https://images.ctfassets.net/wtodlh47qxpt/7CfEtEhYbDMoz47g2mOAq9/a4213ce3bcd2d18fa63bcd5107ca8611/D-K696-prod?h=300&w=400&fm=webp&fit=fill",
+    type: "nonveg"
+  },
+  {
+    id: 402,
+    name: "Hot Wings (6 pcs)",
+    price: 229,
+    category: "Chicken",
+    restaurantId: 4,
+    quantity: 0,
+    image: "https://indianheartbeat.in/wp-content/uploads/2023/01/toppng.com-kfc-wings-chicken-hot-wings-442x256-1.png",
+    type: "nonveg"
+  },
+  {
+    id: 403,
+    name: "Chicken Popcorn",
+    price: 179,
+    category: "Snacks",
+    restaurantId: 4,
+    quantity: 0,
+    image: "https://theyummydelights.com/wp-content/uploads/2021/07/popcorn-chicken-9.jpg",
+    type: "nonveg"
+  },
+  {
+    id: 404,
+    name: "Veg Strips",
+    price: 149,
+    category: "Snacks",
+    restaurantId: 4,
+    quantity: 0,
+    image: "https://c.ndtvimg.com/2024-01/g3j6glm8_finger_625x300_25_January_24.jpg?im=FeatureCrop,algorithm=dnn,width=384,height=384",
+    type: "veg"
+  },
+  {
+    id: 501,
+    name: "Raj Kachori",
+    price: 99,
+    category: "Chaat",
+    restaurantId: 5,
+    quantity: 0,
+    image: "https://indiasweethouse.in/cdn/shop/files/RajKachori.png?v=1718889710",
+    type: "veg"
+  },
+  {
+    id: 502,
+    name: "Paneer Tikka",
+    price: 199,
+    category: "Starters",
+    restaurantId: 5,
+    quantity: 0,
+    image: "https://cookingfromheart.com/wp-content/uploads/2017/03/Paneer-Tikka-Masala-4.jpg",
+    type: "veg"
+  },
+  {
+    id: 503,
+    name: "Dhokla",
+    price: 129,
+    category: "Snacks",
+    restaurantId: 5,
+    quantity: 0,
+    image: "https://images.slurrp.com/prodrecipe_images/cms/34ngoe1snoy.webp",
+    type: "veg"
+  },
+  {
+    id: 504,
+    name: "Chole Bhature",
+    price: 149,
+    category: "Main Course",
+    restaurantId: 5,
+    quantity: 0,
+    image: "https://img-global.cpcdn.com/recipes/87c52cb9ca601252/1200x630cq70/photo.jpg",
+    type: "veg"
+  },
+  {
+    id: 601,
+    name: "Masala Dosa",
+    price: 149,
+    category: "South Indian",
+    restaurantId: 6,
+    quantity: 0,
+    image: "https://www.mydelicious-recipes.com/home/images/120_1080_1080/mydelicious-recipes-masala-dosa-with-batter",
+    type: "veg"
+  },
+  {
+    id: 602,
+    name: "Idli Sambar",
+    price: 99,
+    category: "South Indian",
+    restaurantId: 6,
+    quantity: 0,
+    image: "https://t4.ftcdn.net/jpg/04/39/31/29/360_F_439312935_lxOEQSqasYc5GeyHKgYJXWCIFm8gmQUN.jpg",
+    type: "veg"
+  },
+  {
+    id: 603,
+    name: "Rava Kesari",
+    price: 119,
+    category: "Dessert",
+    restaurantId: 6,
+    quantity: 0,
+    image: "https://cookingfromheart.com/wp-content/uploads/2017/08/Rava-Kesari-6.jpg",
+    type: "veg"
+  },
+  {
+    id: 604,
+    name: "Medu Vada",
+    price: 89,
+    category: "South Indian",
+    restaurantId: 6,
+    quantity: 0,
+    image: "https://www.akshataskitchen.com/wp-content/uploads/2021/11/meduvadatn.png",
+    type: "veg"
+  },
+  {
+    id: 701,
+    name: "McAloo Tikki Burger",
+    price: 99,
+    category: "Burger",
+    restaurantId: 7,
+    quantity: 0,
+    image: "https://content.jdmagicbox.com/v2/comp/mumbai/i8/022pxx22.xx22.141201144028.g7i8/catalogue/mcdonald-s-andheri-east-mumbai-fast-food-01jqspvjqp.jpg",
+    type: "veg"
+  },
+  {
+    id: 702,
+    name: "McSpicy Chicken Burger",
+    price: 179,
+    category: "Burger",
+    restaurantId: 7,
+    quantity: 0,
+    image: "https://content.jdmagicbox.com/v2/comp/mumbai/i8/022pxx22.xx22.141201144028.g7i8/catalogue/mcdonald-s-andheri-east-mumbai-fast-food-01jqspvjqp.jpg",
+    type: "nonveg"
+  },
+  {
+    id: 703,
+    name: "Fries (Large)",
+    price: 129,
+    category: "Snacks",
+    restaurantId: 7,
+    quantity: 0,
+    image: "https://content.jdmagicbox.com/v2/comp/mumbai/i8/022pxx22.xx22.141201144028.g7i8/catalogue/mcdonald-s-andheri-east-mumbai-fast-food-01jqspvjqp.jpg",
+    type: "veg"
+  },
+  {
+    id: 704,
+    name: "McFlurry Oreo",
+    price: 139,
+    category: "Dessert",
+    restaurantId: 7,
+    quantity: 0,
+    image: "https://content.jdmagicbox.com/v2/comp/mumbai/i8/022pxx22.xx22.141201144028.g7i8/catalogue/mcdonald-s-andheri-east-mumbai-fast-food-01jqspvjqp.jpg",
+    type: "veg"
+  },
         {
         id: 801,
         name: "Veggie Delight Sub",

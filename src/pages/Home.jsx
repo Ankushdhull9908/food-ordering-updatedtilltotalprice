@@ -17,9 +17,6 @@ function Home() {
   const [city,setcity] = useState('')
   const [loading,setloading] = useState(false)
 
-
-      console.log(address)
-
       useEffect(()=>{
          if(address.city===null)
          {
