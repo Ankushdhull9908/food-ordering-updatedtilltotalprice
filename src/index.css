@@ -28,13 +28,13 @@ html, body {
 @media (max-width:460px) {
   html, body {
     margin-left: 14px;
-    width: 100vw;
+    max-width: 90vw;
   
     
   }
   
   #root {
-    width: 100vw;
+    width: 90vw;
   }
 
   

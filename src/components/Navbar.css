@@ -127,10 +127,16 @@
         width: 60%;
     }
 
+    .navbar .right img{
+        height: 28px;
+    }
+
+    
+
     .cart1 p{
         
-        left: 5px;
-        top: 5px;
+        left: 9px;
+        top: 9px;
         
     }
 }
