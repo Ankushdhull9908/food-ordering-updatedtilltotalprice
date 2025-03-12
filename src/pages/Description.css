@@ -1,7 +1,6 @@
 .description{
     width: 55%;
     height: 100%;
-    position: relative;
     display: flex;
     
     flex-direction: column;
@@ -166,19 +165,25 @@ background-color: #ddd;
 }
 
 .description .addtocartnotification{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    width: 90%;
+    max-width: 800px;
+    height: 35px;
+    
+    background-color: #1ba672;
+    color: white;
     padding: 20px;
+    
     display: flex;
     justify-content: space-between;
-    color: white;
     align-items: center;
-    margin:auto;
-    position: fixed;
-    height: 35px;
-    width: 800px;
-    background-color: #1ba672;
-    top: 663px;
-  z-index: 1;
-  transition: 0.3s ease-in;
+
+    z-index: 1000;
+    transition: 0.3s ease-in;
 
 }
 
