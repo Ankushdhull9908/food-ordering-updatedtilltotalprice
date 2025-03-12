@@ -147,7 +147,7 @@ export const restaurants = [
         latitude: 28.5239,
         longitude: 77.2068
       },
-      image: 'https://media.istockphoto.com/id/1266579516/photo/indian-traditional-thali-food-dal-makhani-served-with-chapati-papad-kadai-paneer-or-lemon-on.jpg?s=612x612&w=0&k=20&c=_OYAXix_rJeoEgOxyPc-k6wZtZ_-cbcdO_05257zjno=',
+      image: 'https://b.zmtcdn.com/data/pictures/chains/2/20842/ce89a2b9888ae02bc47cb3643bfd5738.jpg?fit=around|960:500&crop=960:500;*,*',
       menu: [1001, 1002]
     },
     {
@@ -162,7 +162,7 @@ export const restaurants = [
         latitude: 28.5211,
         longitude: 77.1976
       },
-      image: 'https://media.istockphoto.com/id/1266579516/photo/indian-traditional-thali-food-dal-makhani-served-with-chapati-papad-kadai-paneer-or-lemon-on.jpg?s=612x612&w=0&k=20&c=_OYAXix_rJeoEgOxyPc-k6wZtZ_-cbcdO_05257zjno=',
+      image: 'https://cdn.sanity.io/images/ei17ewl3/production/803d45d5ee7c69db5e5645e2f7a5e98f19ace97b-1920x920.jpg',
       menu: [1101, 1102]
     },
     {
@@ -177,7 +177,7 @@ export const restaurants = [
         latitude: 28.5265,
         longitude: 77.1939
       },
-      image: 'https://media.istockphoto.com/id/1266579516/photo/indian-traditional-thali-food-dal-makhani-served-with-chapati-papad-kadai-paneer-or-lemon-on.jpg?s=612x612&w=0&k=20&c=_OYAXix_rJeoEgOxyPc-k6wZtZ_-cbcdO_05257zjno=',
+      image: 'https://b.zmtcdn.com/data/pictures/chains/3/593/c7f11f098571e935370d473c93c36dc9.jpg',
       menu: [1201, 1202]
     },
     {
@@ -192,7 +192,7 @@ export const restaurants = [
         latitude: 28.5154,
         longitude: 77.1896
       },
-      image: 'https://media.istockphoto.com/id/1266579516/photo/indian-traditional-thali-food-dal-makhani-served-with-chapati-papad-kadai-paneer-or-lemon-on.jpg?s=612x612&w=0&k=20&c=_OYAXix_rJeoEgOxyPc-k6wZtZ_-cbcdO_05257zjno=',
+      image: 'https://qul.imgix.net/3dda2ed3-083f-4a3b-8980-29a8db963698/721794_sld.jpg',
       menu: [1301, 1302]
     },
     {
@@ -207,7 +207,7 @@ export const restaurants = [
         latitude: 28.5374,
         longitude: 77.2060
       },
-      image: 'https://media.istockphoto.com/id/1266579516/photo/indian-traditional-thali-food-dal-makhani-served-with-chapati-papad-kadai-paneer-or-lemon-on.jpg?s=612x612&w=0&k=20&c=_OYAXix_rJeoEgOxyPc-k6wZtZ_-cbcdO_05257zjno=',
+      image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/64/96/98/indian-tadka.jpg?w=900&h=500&s=1',
       menu: [1401, 1402]
     },
     {
@@ -222,7 +222,7 @@ export const restaurants = [
         latitude: 28.5521,
         longitude: 77.2347
       },
-      image: 'https://media.istockphoto.com/id/1266579516/photo/indian-traditional-thali-food-dal-makhani-served-with-chapati-papad-kadai-paneer-or-lemon-on.jpg?s=612x612&w=0&k=20&c=_OYAXix_rJeoEgOxyPc-k6wZtZ_-cbcdO_05257zjno=',
+      image: 'https://b.zmtcdn.com/data/dish_photos/7ad/e84ac53f716baa330286dcdbf62727ad.jpeg',
       menu: [1501, 1502]
     },
 
@@ -232,7 +232,7 @@ export const restaurants = [
         cuisine: "South Indian",
         rating: 4.3,
         deliveryTime: "20 mins",
-        image: 'https://media.istockphoto.com/id/1266579516/photo/indian-traditional-thali-food-dal-makhani-served-with-chapati-papad-kadai-paneer-or-lemon-on.jpg?s=612x612&w=0&k=20&c=_OYAXix_rJeoEgOxyPc-k6wZtZ_-cbcdO_05257zjno=',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq4r3a_q4OZq81b8Z20EkFvGeCx8dMGwJ1Mw&s',
         location: {
           city: "Bahadurgarh",
           address: "Sector 9, Bahadurgarh 124507",
@@ -247,7 +247,7 @@ export const restaurants = [
         cuisine: "North Indian",
         rating: 4.7,
         deliveryTime: "40 mins",
-        image: 'https://media.istockphoto.com/id/1266579516/photo/indian-traditional-thali-food-dal-makhani-served-with-chapati-papad-kadai-paneer-or-lemon-on.jpg?s=612x612&w=0&k=20&c=_OYAXix_rJeoEgOxyPc-k6wZtZ_-cbcdO_05257zjno=',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPfsoqlCECANgCSohuHocir4hvPR6vrgrOdw&s',
         location: {
           city: "Bahadurgarh",
           address: "Delhi-Rohtak Road, Bahadurgarh 124507",
@@ -337,7 +337,7 @@ export const restaurants = [
         cuisine: "Indian Fusion",
         rating: 4.6,
         deliveryTime: "35 mins",
-        image: 'https://media.istockphoto.com/id/1266579516/photo/indian-traditional-thali-food-dal-makhani-served-with-chapati-papad-kadai-paneer-or-lemon-on.jpg?s=612x612&w=0&k=20&c=_OYAXix_rJeoEgOxyPc-k6wZtZ_-cbcdO_05257zjno=',
+        image: 'https://img-global.cpcdn.com/recipes/cdce0b4106055149/680x482cq70/maggi-masala-%E0%A4%8F-magic-poha-recipe-main-photo.jpg',
         location: {
           city: "Bahadurgarh",
           address: "Sector 6, Bahadurgarh 124507",
@@ -352,7 +352,7 @@ export const restaurants = [
         cuisine: "Home-style Indian",
         rating: 4.8,
         deliveryTime: "40 mins",
-        image: 'https://media.istockphoto.com/id/1266579516/photo/indian-traditional-thali-food-dal-makhani-served-with-chapati-papad-kadai-paneer-or-lemon-on.jpg?s=612x612&w=0&k=20&c=_OYAXix_rJeoEgOxyPc-k6wZtZ_-cbcdO_05257zjno=',
+        image: 'https://img.etimg.com/thumb/width-1200,height-900,imgsize-1479961,resizemode-75,msid-70143298/magazines/panache/ghar-ka-khana-tweet-goes-viral-but-twitterati-wants-zomato-to-be-a-sport.jpg',
         location: {
           city: "Bahadurgarh",
           address: "Bus Stand Road, Bahadurgarh 124507",
