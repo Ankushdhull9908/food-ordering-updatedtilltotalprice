@@ -12,6 +12,7 @@
 
 @media (max-width:460px) {
   .App{
-    width: 100vw;
+    max-width: 90vw;
+    overflow-x: hidden;
   }
 }
