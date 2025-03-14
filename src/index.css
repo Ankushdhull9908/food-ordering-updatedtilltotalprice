@@ -27,7 +27,6 @@ html, body {
 
 @media (max-width:460px) {
   html, body {
-    margin-left: 14px;
     max-width: 90vw;
   
     
